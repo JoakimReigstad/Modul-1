@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</link>
+    <title>Document</title>
+</head>
+<body>
+    <div class="button-group">
+        <h1>Første oppgave</h1>
+        <button id="btn1" onclick="buttonClick(1)">
+            Er det her man skal trykke
+        </button>
+        <button id="btn2" onclick="buttonClick(2)">
+            Eller her?
+        </button>
+        <button id="btn3" onclick="buttonClick(3)">
+            hmm?
+        </button>
+        <button id="btn4" onclick="buttonClick(4)">
+            Her er det vel?
+        </button>
+    </div>
+    <script>
+        function buttonClick(buttonId) {
+            document.getElementById('btn' + buttonId).innerHTML = "Her skal det bli ny tekst om jeg har gjort det riktig";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: aquamarine;
+    
+}
+
+#counter {
+    font-size: 24px;
+    font-weight: bold;
+}

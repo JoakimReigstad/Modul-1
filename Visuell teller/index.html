@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment and Decrement</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <button onclick="decrease()">Decrease</button>
+    <button onclick="increase()">Increase</button>
+
+    <p id="counter">0</p>
+
+    <script>
+        let count = 0;
+
+        function decrease() {
+            count--;
+            updateCounter();
+        }
+
+        function increase() {
+            count++;
+            updateCounter();
+        }
+
+        function updateCounter() {
+            document.getElementById('counter').textContent = count;
+        }
+    </script>
+
+</body>
+
+</html>
