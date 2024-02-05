@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Keyboard</title>
+</head>
+
+<body>
+    <div id="tekstBoks"></div>
+    <div id="keyboard">
+        <div class="row">
+            <div class="tast" onclick="Bokstav(this)">Q</div>
+            <div class="tast" onclick="Bokstav(this)">W</div>
+            <div class="tast" onclick="Bokstav(this)">E</div>
+            <div class="tast" onclick="Bokstav(this)">R</div>
+            <div class="tast" onclick="Bokstav(this)">T</div>
+            <div class="tast" onclick="Bokstav(this)">Y</div>
+            <div class="tast" onclick="Bokstav(this)">U</div>
+            <div class="tast" onclick="Bokstav(this)">I</div>
+            <div class="tast" onclick="Bokstav(this)">O</div>
+            <div class="tast" onclick="Bokstav(this)">P</div>
+        </div>
+        <div class="row">
+            <div class="tast" onclick="Bokstav(this)">A</div>
+            <div class="tast" onclick="Bokstav(this)">S</div>
+            <div class="tast" onclick="Bokstav(this)">D</div>
+            <div class="tast" onclick="Bokstav(this)">F</div>
+            <div class="tast" onclick="Bokstav(this)">G</div>
+            <div class="tast" onclick="Bokstav(this)">H</div>
+            <div class="tast" onclick="Bokstav(this)">J</div>
+            <div class="tast" onclick="Bokstav(this)">K</div>
+            <div class="tast" onclick="Bokstav(this)">L</div>
+            <div class="tast" onclick="Bokstav(this)">Ø</div>
+            <div class="tast" onclick="Bokstav(this)">Æ</div>
+        </div>
+        <div class="row">
+            <div class="tast" onclick="Bokstav(this)">Z</div>
+            <div class="tast" onclick="Bokstav(this)">X</div>
+            <div class="tast" onclick="Bokstav(this)">C</div>
+            <div class="tast" onclick="Bokstav(this)">V</div>
+            <div class="tast" onclick="Bokstav(this)">B</div>
+            <div class="tast" onclick="Bokstav(this)">N</div>
+            <div class="tast" onclick="Bokstav(this)">M</div>
+        </div>
+        <div class="row">
+            <div class="tast" onclick="space()">Space</div>
+        </div>
+    </div>
+
+    <script>
+        let tekstOutput = document.getElementById('tekstBoks');
+
+        function Bokstav(btn) {
+            let bokstav = btn.innerHTML;
+            console.log(bokstav);
+            tekstOutput.innerHTML += bokstav;
+        }
+
+        function space() {
+            tekstOutput.innerHTML += ' ';
+        }
+    </script>
+
+</body>
+
+</html>
