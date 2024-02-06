@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lyspære</title>
+</head>
+<body>
+    <div class="lys">
+        <div class="ledning"></div>
+        <div class="pære">
+            <span></span>
+            <span></span>
+
+        </div>
+        <div class="lysbryter">
+            <div class="btn"></div>
+    </div>
+    <script>
+        let btn = document.querySelector('.btn');
+        let body = document.querySelector('body');
+        btn.onclick = function(){
+            body.classList.toggle('on');
+        }
+    </script>
+</body>
+</html>
