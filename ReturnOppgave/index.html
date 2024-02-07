@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainDiv"> </div>
+    <button onclick="createAndShowHtml('green', 'Hallo verden', 30, 'ridge', 5, 'rgba(211, 220, 50, .6)', 'orange', 10)"> Test 1</button>
+    <button onclick="createAndShowHtml('gray', 'Hei på deg!', 20, 'solid', 1, 'rgba(0, 0, 0, .5)', 'blue', 5)"> Test 2</button>
+    <button onclick="createAndShowHtml('yellow', 'GET Academy', 10, 'double', 10, 'rgba(255, 255, 0, .7)', 'red', 0)"> Test 3</button>
+    <script>
+        function createAndShowHtml(color, text, fontSize, borderStyle, borderSize, bgColor, borderColor, borderRadius) {
+            document.getElementById('mainDiv').innerHTML = `
+                <div ${createStyle(color, fontSize, borderStyle, borderSize, bgColor, borderColor, borderRadius)}>${text} </div>
+            `;
+        }
+    
+        function createStyle(color, fontSize, borderStyle, borderSize, bgColor, borderColor, borderRadius) {
+            return `style="${createBackgroundColor(bgColor)}${createFontSize(fontSize)} ${createBorderStyle(borderStyle, borderSize, borderColor, borderRadius)}"`
+        }
+    
+        function createBackgroundColor(bgColor) {
+            return `background-color: ${bgColor};`;
+        }
+    
+        function createFontSize(fontSize) {
+            return `font-size: ${fontSize}px;`;
+        }
+    
+        function createBorderStyle(borderStyle, borderSize, borderColor, borderRadius) {
+            return `border: ${borderSize}px ${borderStyle} ${borderColor}; border-radius: ${borderRadius}px;`;
+        }
+    </script>
+    
+
+</body>
+</html>
