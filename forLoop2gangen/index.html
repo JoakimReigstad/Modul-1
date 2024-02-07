@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="textInput" type="text" />
+    <button class="print-button" onclick="printNumbers()">Print numbers</button>
+    <ul id="numbers"></ul>
+    <script>
+        function printNumbers() {
+            let stopValue = 20;
+            let numbersList = document.getElementById('numbers');
+            numbersList.innerHTML = '';
+            for (let counter = 2; counter <= stopValue; counter += 2) {
+                let listItem = document.createElement('li');
+                listItem.textContent = counter;
+                numbersList.appendChild(listItem);
+            }
+        }
+    </script>
+</body>
+
+
+
+
+</html>
