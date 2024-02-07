@@ -19,8 +19,8 @@ let answers = [
   'Don\'t count on it',
   'My sources say no',
   'Outlook not so good?',
-  'Very doubtful', // Added a comma here
-  'Does a one-legged duck swim in a circle?' // Added a comma here
+  'Very doubtful',
+  'Does a one-legged duck swim in a circle?'
 ];
 
 let displayAnswer = function() {
