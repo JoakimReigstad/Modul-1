@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count vowels and Reverse text</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Count vowels and Reverse text</h1>
+
+    <label for="inputString">Skriv noe:</label>
+    <input type="text" id="inputString">
+    <button class="button" onclick="countVowelsAndReverse()">Count Vowels and Reverse</button>
+
+    <div id="result"></div>
+
+    <script>
+        function countVowelsAndReverse() {
+            let inputString = document.getElementById('inputString').value;
+
+            let vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'æ', 'ø', 'å'];
+            let counts = {};
+
+            for (let vowel of vowels) {
+                counts[vowel] = 0;
+            }
+
+            for (let letter of inputString.toLowerCase()) {
+                if (vowels.includes(letter)) {
+                    counts[letter]++;
+                }
+            }
+
+            let resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
+            for (let vowel in counts) {
+                resultDiv.innerHTML += `<p>Number of '${vowel}': ${counts[vowel]}</p>`;
+            }
+
+            //Baklengs tekst
+            let reversedText = '';
+            for (let i = inputString.length - 1; i >= 0; i--) {
+                reversedText += inputString[i];
+            }
+
+            resultDiv.innerHTML += `<p>Reversed text: ${reversedText}</p>`;
+        }
+    </script>
+
+</body>
+
+</html>
