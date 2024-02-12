@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation Test</title>
+</head>
+
+<body>
+    <h1>Email Validation Test</h1>
+    <input type="text" id="emailInput" placeholder="Enter an email">
+    <button onclick="validateEmail()">Validate</button>
+    <p id="result"></p>
+
+    <script>
+        function isEmail(text) {
+            return text.includes('@') && !text.includes(' ') && text.indexOf('@') < text.lastIndexOf('.');
+        }
+
+        function validateEmail() {
+            const emailInput = document.getElementById('emailInput');
+            const resultParagraph = document.getElementById('result');
+            const email = emailInput.value;
+            const isValid = isEmail(email);
+            resultParagraph.textContent = isValid ? 'Valid email address!' : 'Not a valid email address!';
+        }
+
+    </script>
+</body>
+</html>
