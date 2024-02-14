@@ -1,0 +1,71 @@
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  color: #fff;
+  background-color: #8b0000;
+  border: 2px solid #8b0000;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #b22222;
+  border-color: #b22222;
+  transform: scale(1.05);
+}
+
+#frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 300px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+body {
+  background-image: url('img/basment.png');
+  background-color: #979797;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.endScreen {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 175px;
+}
+
+.score {
+  padding-top: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Creepster;
+  font-size: 25px;
+  color: #65ff00;
+  font-weight: bold;
+  text-shadow: 4px 4px 8px rgb(234, 0, 255);
+  transform: rotate(-4deg);
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+}
+
+#timmy {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
