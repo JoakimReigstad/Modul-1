@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario vs. Bowser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mario vs. Bowser</h1>
+        <div class="select-character">
+            <h2>Velg karakter</h2>
+            <div class="character-selection">
+                <img src="images/mario.png" alt="Mario" onclick="selectCharacter('mario')">
+                <img src="images/luigi.png" alt="Luigi" onclick="selectCharacter('luigi')">
+                <img src="images/peach.png" alt="Peach" onclick="selectCharacter('peach')">
+                <img src="images/yoshi.png" alt="Yoshi" onclick="selectCharacter('yoshi')">
+
+            </div>
+        </div>
+
+        <div id="battleArea"></div>
+        <div id="resultMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
